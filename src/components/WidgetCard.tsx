@@ -72,7 +72,7 @@ const WidgetCard: React.FC<WidgetCardProps> = ({
     },
   });
 
-  const [{ isDragging }, drag, preview] = useDrag({
+  const [{ isDragging }, drag] = useDrag({
     type: 'widget',
     item: () => {
       return { id: widget.id, index };
