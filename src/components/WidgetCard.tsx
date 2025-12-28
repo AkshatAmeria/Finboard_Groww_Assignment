@@ -71,7 +71,6 @@ const WidgetCard: React.FC<WidgetCardProps> = ({
       item.index = hoverIndex;
     },
   });
-
   const [{ isDragging }, drag] = useDrag({
     type: 'widget',
     item: () => {
